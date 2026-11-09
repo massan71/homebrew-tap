@@ -8,6 +8,7 @@
 brew install --cask massan71/tap/isoquik
 ```
 
+Naming the tap in the command trusts the cask, as Homebrew requires for third-party taps.
 Update with `brew upgrade --cask isoquik`, remove with `brew uninstall --cask isoquik`.
 
 IsoQuik is ad-hoc signed and not notarized by Apple. The cask removes the quarantine flag after installing, so macOS opens it without the Gatekeeper warning.
