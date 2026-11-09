@@ -12,15 +12,16 @@ cask "isoquik" do
     strategy :github_latest
   end
 
-  depends_on macos: ">= :sonoma"
+  depends_on macos: :sonoma
 
   app "IsoQuik.app"
 
   # The app is ad-hoc signed and not notarized: without this, Gatekeeper
   # refuses to open it after a download.
-  postflight do
-    system_command "/usr/bin/xattr",
-                   args: ["-dr", "com.apple.quarantine", "#{appdir}/IsoQuik.app"]
+  postflight_steps do
+    run "/usr/bin/xattr",
+        args:         ["-dr", "com.apple.quarantine", "{{appdir}}/IsoQuik.app"],
+        must_succeed: false
   end
 
   zap trash: [
