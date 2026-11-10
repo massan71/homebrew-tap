@@ -1,6 +1,6 @@
 cask "firewalladock" do
-  version "1.3"
-  sha256 "0d71cf953754f2d4a4d2ccc65131e7c43bc54742a752121b8dfc14c8a5639912"
+  version "1.4"
+  sha256 "0308c7e9d579133a545d13a29b9ec17ba08e5ca24aef4bc3f2b0b85e93dd3420"
 
   url "https://github.com/massan71/FirewallaDock/releases/download/v#{version}/FirewallaDock-#{version}.zip"
   name "FirewallaDock"
