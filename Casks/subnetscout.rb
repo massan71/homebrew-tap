@@ -1,6 +1,6 @@
 cask "subnetscout" do
-  version "0.5.0"
-  sha256 "76d4e17ea0b6b890b47da5c004a57662b57971032246a94fc139a44b56ed3b38"
+  version "0.6.0"
+  sha256 "a23a7d5cf4d48183240bc08bf5f1b5115458d958e0bd1f88e99fd2894600cbec"
 
   url "https://github.com/massan71/SubnetScout/releases/download/v#{version}/SubnetScout-#{version}.zip"
   name "SubnetScout"
