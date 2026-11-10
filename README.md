@@ -35,7 +35,7 @@ brew install --cask massan71/tap/subnetscout
 
 Update with `brew upgrade --cask subnetscout`, remove with `brew uninstall --cask subnetscout` (`--zap` also removes scan history, settings, the privileged helper and its protected copy of nmap).
 
-SubnetScout is ad-hoc signed and not notarized by Apple. Like the other apps here, the cask removes the quarantine flag after installing. After an upgrade, the optional privileged helper has to be reinstalled and approved again from the app.
+SubnetScout is signed with its own certificate (not an Apple Developer ID) and is not notarized. Like the other apps here, the cask removes the quarantine flag after installing. After an upgrade, the privileged helper has to be reinstalled and approved again from the app.
 
 ## Releasing a new IsoQuik version
 
