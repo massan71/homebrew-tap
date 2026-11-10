@@ -39,10 +39,11 @@ cask "subnetscout" do
   caveats <<~EOS
     Scan only networks you own or are explicitly authorized to test.
 
-    Install the privileged helper from the app sidebar ("Installa helper…") and
+    Install the privileged helper from the app sidebar ("Install Helper…") and
     approve SubnetScout in System Settings › General › Login Items & Extensions:
     every scan then runs through it, without password prompts or macOS local
     network limits. The app is not signed with an Apple Developer ID, so after
-    each upgrade click "Reinstalla" and approve the helper again.
+    each upgrade click "Reinstall" and approve the helper again, and choose
+    "Always Allow" when macOS asks for Keychain access.
   EOS
 end
