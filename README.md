@@ -37,6 +37,18 @@ Update with `brew upgrade --cask subnetscout`, remove with `brew uninstall --cas
 
 SubnetScout is signed with its own certificate (not an Apple Developer ID) and is not notarized. Like the other apps here, the cask removes the quarantine flag after installing. After an upgrade, the privileged helper has to be reinstalled and approved again from the app.
 
+## ProxmoxDock
+
+[ProxmoxDock](https://github.com/massan71/ProxmoxDock) monitors and manages a Proxmox VE server or cluster from the Dock and menu bar: nodes, VMs and containers, power actions, snapshots and backups (universal: Apple silicon and Intel, macOS 14 or later).
+
+```bash
+brew install --cask massan71/tap/proxmoxdock
+```
+
+Update with `brew upgrade --cask proxmoxdock`, remove with `brew uninstall --cask proxmoxdock` (`--zap` also removes its settings; the API token secret stays in the Keychain under "ProxmoxDock").
+
+ProxmoxDock is ad-hoc signed and not notarized by Apple; like the other casks here, it removes the quarantine flag after installing.
+
 ## Releasing a new IsoQuik version
 
 1. Publish the release and its `IsoQuik-<version>.dmg` in the IsoQuik repository.
@@ -50,3 +62,7 @@ SubnetScout is signed with its own certificate (not an Apple Developer ID) and i
 ## Releasing a new SubnetScout version
 
 `scripts/release.sh` in the SubnetScout repository updates `Casks/subnetscout.rb` here (version and `sha256`), commits and pushes it after publishing the GitHub release, as long as this repository is checked out next to it. To do it by hand: update `version` and `sha256` (`shasum -a 256 SubnetScout-<version>.zip`), then `brew audit --cask --online massan71/tap/subnetscout && brew style massan71/tap`.
+
+## Releasing a new ProxmoxDock version
+
+`scripts/release.sh` in the ProxmoxDock repository updates `Casks/proxmoxdock.rb` here (version and `sha256`), commits and pushes it after publishing the GitHub release, as long as this repository is checked out next to it.
