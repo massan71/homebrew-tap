@@ -1,6 +1,6 @@
 cask "proxmoxdock" do
-  version "1.0"
-  sha256 "09a13bf65e7d857712a32fa5ddf28007423c87c8f10e2596f099240222bcbf12"
+  version "1.1"
+  sha256 "c19d488e96cf8cb6d03452bc8baf94efb67b9c15c5e61ad283ac795ad0ceb3a2"
 
   url "https://github.com/massan71/ProxmoxDock/releases/download/v#{version}/ProxmoxDock-#{version}.zip"
   name "ProxmoxDock"
